@@ -5,7 +5,7 @@
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.0+-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-本系统是一个基于 **Python** 和 **Streamlit** 开发的自动化植物色素层析分析工具。它能够通过数字图像处理技术，自动识别滤纸层析实验中的色素带，并精准计算比移值（$R_f$ 值），极大简化了传统生物/化学实验中人工测量带来的误差和繁琐步骤。
+本系统是一个基于 **Python** 和 **Streamlit** 开发的自动化植物色素层析分析工具。它能够通过数字图像处理技术，自动识别滤纸层析实验中的色素带，并精准计算比移值（Rf值），极大简化了传统生物/化学实验中人工测量带来的误差和繁琐步骤。
 
 ---
 
