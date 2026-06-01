@@ -50,27 +50,4 @@ $$R_f = \frac{D_p}{D_s}$$
 git clone [https://github.com/JiYu-Innovation/pigment-analysis.git](https://github.com/JiYu-Innovation/pigment-analysis.git)
 cd pigment-analysis
 
-2. 安装依赖
-Bash
-pip install -r requirements.txt
-3. 部署注意 (GitHub Streamlit Cloud)
-若在云端部署，请确保包含以下文件以支持中文显示：
 
-packages.txt: 包含 fonts-noto-cjk。
-
-app.py: 已包含动态字体加载逻辑。
-
-📂 项目结构
-Plaintext
-pigment-analysis/
-├── app.py              # 主程序代码
-├── requirements.txt    # Python 依赖包
-├── packages.txt        # 系统级字体依赖 (Linux)
-└── README.md           # 项目说明文档
-🤝 贡献与支持
-本程序由 济宁师范学院 (Jining Normal University) 电子信息科学与技术专业团队开发。
-如果您有任何改进建议，欢迎提交 Pull Request 或联系项目负责人。
-
-Author: Wang Ning (JiYu-Innovation)
-
-Date: 2026-06
