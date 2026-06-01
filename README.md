@@ -36,8 +36,8 @@
 $$R_f = \frac{D_p}{D_s}$$
 
 其中：
-- $D_p$ 为色素带**几何中心**至原点的距离。
-- $D_s$ 为**溶剂前沿**至原点的距离。
+* $D_p$ 为色素带**几何中心**至原点的距离。
+* $D_s$ 为**溶剂前沿**至原点的距离。
 
 > **核心改进**：系统不直接采用波峰点（Peak），而是通过信号包络算法获取色带上下边缘，取其算术平均值作为几何中心，有效解决了色带扩散不对称导致的测量偏差。
 
@@ -49,15 +49,17 @@ $$R_f = \frac{D_p}{D_s}$$
 ```bash
 git clone [https://github.com/JiYu-Innovation/pigment-analysis.git](https://github.com/JiYu-Innovation/pigment-analysis.git)
 cd pigment-analysis
+```
+---
 2. 安装依赖
 Bash
 pip install -r requirements.txt
 3. 部署注意 (GitHub Streamlit Cloud)
-若在云端部署，请确保包含以下文件以支持中文显示：
+若在云端部署，请确保仓库包含以下文件以支持中文显示：
 
 packages.txt: 包含 fonts-noto-cjk。
 
-app.py: 已包含动态字体加载逻辑。
+app.py: 已内置动态字体加载逻辑。
 
 📂 项目结构
 Plaintext
@@ -67,10 +69,8 @@ pigment-analysis/
 ├── packages.txt        # 系统级字体依赖 (Linux)
 └── README.md           # 项目说明文档
 🤝 贡献与支持
-本程序由 济宁师范学院 (Jining Normal University) 电子信息科学与技术专业团队开发。
-如果您有任何改进建议，欢迎提交 Pull Request 或联系项目负责人。
+本程序由 济宁师范学院 (Jining Normal University) 电子信息科学与技术专业团队开发。如果您有任何改进建议，欢迎提交 Pull Request 或联系项目负责人。
 
 Author: Wang Ning (JiYu-Innovation)
 
 Date: 2026-06
-
