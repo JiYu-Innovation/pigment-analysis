@@ -4,5 +4,4 @@ numpy
 matplotlib
 scipy
 Pillow
-fonts-nanum
-fonts-noto-cjk
+
