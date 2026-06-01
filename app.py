@@ -4,10 +4,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import find_peaks, peak_widths
 import pandas as pd
+import platform
 
-# 1. 适配中文显示（Matplotlib）
-plt.rcParams['font.sans-serif'] = ['SimHei', 'Arial Unicode MS', 'sans-serif'] 
-plt.rcParams['axes.unicode_minus'] = False
+# 1. 自动识别环境设置字体
+system_type = platform.system()
+
+if system_type == "Linux":
+    # 针对 GitHub Streamlit Cloud (Linux) 的设置
+    plt.rcParams['font.sans-serif'] = ['Noto Sans CJK JP', 'Noto Sans CJK SC', 'DejaVu Sans']
+else:
+    # 针对本地 Windows 或 Mac 的设置
+    plt.rcParams['font.sans-serif'] = ['SimHei', 'Arial Unicode MS', 'sans-serif']
+
+plt.rcParams['axes.unicode_minus'] = False # 解决负号显示问题
 
 # 页面基础配置
 st.set_page_config(page_title="植物色素层析图像定量分析系统", layout="wide", initial_sidebar_state="expanded")
