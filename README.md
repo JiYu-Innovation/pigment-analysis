@@ -64,7 +64,7 @@ app.py: 已内置动态字体加载逻辑。
 
 
 ---
-###🤝 贡献与支持
+### 🤝 贡献与支持
 如果您有任何改进建议，欢迎提交 Pull Request 或联系项目负责人。
 
 Author: Wang Ning (JiYu-Innovation)
